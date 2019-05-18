@@ -1,0 +1,545 @@
+{
+    "a-developers-guide-to-wordpress": {
+        "slug": "a-developers-guide-to-wordpress",
+        "title": "A Developer's Guide to WordPress",
+        "description": "In this talk we’ll take a peek under the hood at some of the underlying architecture behind the most popular content management system on the planet. We’ll review the database schema and internal APIs, and discuss the pros, cons and caveats to historical decisions that are now \"baked in\" to WordPress, for better or worse.",
+        "track": "security-and-devops",
+        "space": "room-424",
+        "timePeriod": 1300,
+        "level": "200",
+        "speakers": [
+            "josh-lee"
+        ],
+        "resources": [
+            {
+                "href": "http://slides.com/joshlee-1/a-developer-s-guide-to-wordpress#/",
+                "title": "Slides"
+            }
+        ]
+    },
+    "adopt-an-active-office-lifestyle": {
+        "slug": "adopt-an-active-office-lifestyle",
+        "title": "Adopt an Active Office Lifestyle",
+        "description": "Do you find yourself sitting in an office chair for hours on end, hunching into that awful turtle posture? It’s time to break out of your shell, get out of your chair more often, and adopt a more active office lifestyle. This session will discuss research that explains the downsides to sedentary behavior, cover why improving your everyday office routine is vital, and provide simple tools to do so. An essential element to a new office lifestyle is the habit: we will learn the components of a habit and how to create a new habit or modify an existing one. This session was developed and presented for the Society of Women Engineers (SWE) conference in 2016 which draws over 11,000 female engineers annually.",
+        "track": "soft-skills-and-other",
+        "space": "room-442",
+        "timePeriod": 1345,
+        "level": "100",
+        "speakers": [
+            "kendra-goudreau",
+            "iris-galvez"
+        ]
+    },
+    "azure-iot-devops-and-edge-devices": {
+        "slug": "azure-iot-devops-and-edge-devices",
+        "title": "Azure IoT, DevOps and Edge Devices",
+        "description": "This session provides architecture patterns, best practices and running demonstrations that show how to design and implement highly distributed IoT SaaS solutions using Azure. Topics include creating continuous delivery automation for Azure services and custom microservices. Edge device firmware is examined to understand how devices are bootstrapped, configured and implemented to handle both outgoing telemetry as well as incoming events and commands. IoT Hub’s Device Twin is examined and demonstrated to show how over the air configuration and firmware updates can be applied. Work performed with customers is discussed to shed light on the challenges that organizations face when moving to real-time systems that drive business outcomes.",
+        "track": "cloud-data-and-iot",
+        "space": "room-221",
+        "timePeriod": 1100,
+        "level": "300",
+        "speakers": [
+            "bob-familiar"
+        ]
+    },
+    "bring-your-code-to-life": {
+        "slug": "bring-your-code-to-life",
+        "title": "Bring Your Code to Life: Screencasting 101",
+        "description": "Ever want to demonstrate your app or teach the use of your software's features? Need to enhance your documentation or blog posts with a video? Creating a screencast helps software developers show off their work. Come to this session to learn how to make a screencast video and look like a Rockstar. I will give you 30 tips in 30 minutes.",
+        "track": "soft-skills-and-other",
+        "space": "room-442",
+        "timePeriod": 1530,
+        "level": "100",
+        "speakers": [
+            "betsy-weber"
+        ]
+    },
+    "closing": {
+        "slug": "closing",
+        "title": "Closing Remarks",
+        "space": "main-hall",
+        "timePeriod": 1715,
+        "speakers": []
+    },
+    "cloud-migration-at-dealer.com": {
+        "slug": "cloud-migration-at-dealer.com",
+        "title": "Cloud (AWS) Migration at Dealer.com",
+        "description": "Dealer.com, along with other businesses within Cox Automotive, is engaged in a multi-year effort to migrate the bulk of our applications, primarily client-facing SaaS applications and large, consumer-facing websites, away from physical datacenters and to AWS. One year into this effort we have learned a significant amount about both the architectural patterns and organizational practices required to be successful. This session will cover both of these aspects, including the need for effective change management, driving consistent solutions across a large organization, and the architectural patterns that support operating our applications in a hybrid on-prem/cloud environment. Examples of this approach will include discussion of AWS technologies such as IAM, Beanstalk, Lambda, and DynamoDB.",
+        "track": "cloud-data-and-iot",
+        "space": "room-221",
+        "timePeriod": 1615,
+        "level": "200",
+        "speakers": [
+            "kevin-thorley"
+        ]
+    },
+    "cognitive-services-in-xamarin-applications": {
+        "slug": "cognitive-services-in-xamarin-applications",
+        "title": "Cognitive Services in Xamarin Applications",
+        "description": "I’m sure you’ve heard about artificial intelligence because it’s the next big thing and all major tech companies are involved in its development. Now you can implement it too directly in your Xamarin application using Microsoft Cognitive Services. In this session you’ll get basic knowledge about artificial intelligence, machine learning and their applications, go over 6 available groups of Cognitive Services and see individual APIs available in Azure. Also we’ll concentrate on some details and specifics of Cognitive Services implementation in Xamarin and Xamarin.Forms solutions. In the end you’ll see a demo using Computer Vision API in Azure to implement a personal image organizing app.",
+        "track": "cloud-data-and-iot",
+        "space": "room-221",
+        "timePeriod": 1345,
+        "level": "200",
+        "speakers": [
+            "veronika-kolesnikova"
+        ]
+    },
+    "devops-why-you-should-be-doing-it-and-where-to-start": {
+        "slug": "devops-why-you-should-be-doing-it-and-where-to-start",
+        "title": "DevOps: Why You Should Be Doing It and Where to Start",
+        "description": "In this session we will explore the fundamental benefits of DevOps, the critical areas you should focus on first and key references to help you define your journey. We'll then dive in to some real world examples, framework and theory that will give you and idea on where you might start or improve your DevOps discipline.",
+        "track": "security-and-devops",
+        "space": "room-424",
+        "timePeriod": 900,
+        "level": "200",
+        "speakers": [
+            "tobin-winters"
+        ],
+        "resources": [
+            {
+                "href": "https://drive.google.com/file/d/0B1gbfXGlqI8eUmdkdUpnU0o4N0E/view?usp=sharing",
+                "title": "Slides"
+            }
+        ]
+    },
+    "fast-chatbot-prototyping": {
+        "slug": "fast-chatbot-prototyping",
+        "title": "Fast Chatbot Prototyping with Microsoft's Bot Framework & Node.js",
+        "description": "From shopping-assistant bots helping you pick out a kayak to Alexa turning on your living room lights, chatbot functionality is all around us. Now, recent framework offerings from Microsoft allow developers to get up and running faster than ever. Leverage Node.js and the Bot Framework to quickly prototype chatbots by combining your own content with enterprise quality cloud services. Use AI services like natural language processing and image recognition without writing the underlying code. Ship faster as a solo developer or small team by taking advantage of plug and play libraries.\n\nThis talk will provide an overview of basic chatbot functionality coupled with its code underpinnings. Additionally, we’ll see how easy it is to integrate cloud services (AI and otherwise) as well as deploy to multiple channels.",
+        "track": "cloud-data-and-iot",
+        "space": "room-221",
+        "timePeriod": 1015,
+        "level": "200",
+        "speakers": [
+            "linus-falck-ytter"
+        ]
+    },
+    "forget-fonts": {
+        "slug": "forget-fonts",
+        "title": "Forget Fonts: Why (and How) UX Practitioners Should Partner with Back-End Developers",
+        "description": "When discussing UX, many people reflexively think of \"UI,\" \"design,\" or—even more myopically—\"fonts.\" Although all of these are components of UX, a narrow focus on visual or interaction design ignores the fact that UX research encompasses a much broader array of activities that can inform user experiences through the lens of engineering. The UX literature itself contains very few references to how UX and backend development teams can work together. Why should we bother strengthening this partnership? In this talk I will cover four areas where this partnership can help us identify key improvements to our software’s usability:\n\n 1. the impact that upstream systems have on the propagation of data to downstream systems;\n 2. user expectations around where data can be added, edited, or deleted and in what time frame;\n 3. management of user permissions (where data becomes available and to whom); and\n 4. strategies to shield the user from the logic that engineering teams have implemented on the backend.\n\nI will conclude this talk with actionable techniques that teams can use in order to uncover these themes during user interviews.",
+        "track": "languages-and-practices",
+        "space": "room-233",
+        "timePeriod": 1015,
+        "level": "100",
+        "speakers": [
+            "amy-chess"
+        ],
+        "resources": [
+            {
+                "href": "https://docs.google.com/presentation/d/1hfrXFOLLsOBnBKns59QOdNecxjxOxLr4sMYZrelAOuI/edit?usp=sharing",
+                "title": "Slides"
+            }
+        ]
+    },
+    "functional-javascript": {
+        "slug": "functional-javascript",
+        "title": "Functional JavaScript",
+        "description": "Quick tips on how get started with curries, maps, filters, folds, recursions, monads and more in your front-end today!\n\nThat convoluted code-base out of control? A little sprinkle of functional JavaScript may be just what you need.",
+        "track": "languages-and-practices",
+        "space": "room-233",
+        "timePeriod": 900,
+        "level": "200",
+        "speakers": [
+            "john-need"
+        ],
+        "resources": [
+            {
+                "href": "https://docs.google.com/presentation/d/1iMUnak_cYvnOJLqYwo87v3LbR7JLyPExmfLYIuCVY4M/edit?usp=sharing",
+                "title": "Slides"
+            }
+        ]
+    },
+    "go-offline-first-to-save-the-world": {
+        "slug": "go-offline-first-to-save-the-world",
+        "title": "Go Offline First to Save the World",
+        "description": "In Vermont, we don't take great connectivity for granted, so why do we expect great connectivity of the users of our apps? What if you need to access important information in a situation where offline is the reality? From supporting hospitals in Africa to providing electric power to Haiti to supporting families in rural Alaska, the Offline First approach to application development is truly saving the world. This session will uncover the approaches used in successful real world examples of Offline First and show you the tools and techniques that will allow you to build the same kinds of things. Offline often happens much closer to home, in the shadow of skyscrapers for example, so gaining the skills for building offline capable apps will enable you to deliver a robust and reliable mobile web experience wherever your users are. There is a growing community around the Offline First movement. This session will introduce you to this community, as well as popular resources for Offline First development, and show application development teams how you, too, can save the world.",
+        "track": "client-mobile-web-and-more",
+        "space": "room-232",
+        "timePeriod": 1530,
+        "level": "300",
+        "speakers": [
+            "maureen-mcelaney"
+        ],
+        "resources": [
+            {
+                "href": "https://speakerdeck.com/mmcelaney/vermont-code-camp-9-go-offline-first-to-save-the-world",
+                "title": "Slides"
+            }
+        ]
+    },
+    "how-file-upload-features-a-security-risk-and-what-you-can-do-about-it": {
+        "slug": "how-file-upload-features-a-security-risk-and-what-you-can-do-about-it",
+        "title": "How File Upload Features a Security Risk and What You Can Do About It",
+        "description": "Most web apps these days have some sort of file upload functionality, whether it's a simple profile image or something more involved. Unfortunately, there are a lot of subtle issues that arise when implementing a feature like this, and many implementations get it wrong. Consequences range from account takeover to server compromise, and users can bear the risks just as much as providers.\n\nIn this talk, we'll cover the most common gotchas. We'll go from root cause to consequences, and wrap it up by discussing how to build a solid file upload feature from the ground up.",
+        "track": "security-and-devops",
+        "space": "room-424",
+        "timePeriod": 1615,
+        "level": "300",
+        "speakers": [
+            "brian-waters"
+        ]
+    },
+    "infinite-replay-value": {
+        "slug": "infinite-replay-value",
+        "title": "Infinite Replay Value: Air Traffic Control Simulation Software and the Business Value of Event Sourcing",
+        "description": "Understanding design and architecture patterns in software can be challenging when they are presented without real world examples that illustrate both how they work and what benefits they provide. This session will delve into the event sourcing pattern in the context of Air Traffic Control (ATC) simulation software. We'll examine implementation details along with an overview of the value delivered to the end user to show both how the pattern works and what kind of requirements might make it a good architecture choice. Specifically, we will discuss how applications which require replay functionality, auditing or consistent state across multiple clients may benefit from Event Sourcing.",
+        "track": "languages-and-practices",
+        "space": "room-233",
+        "timePeriod": 1530,
+        "level": "300",
+        "speakers": [
+            "ben-glassman"
+        ],
+        "resources": [
+            {
+                "href": "https://vermontdesignworks.github.io/infinite-replay-value/",
+                "title": "Slides"
+            }
+        ]
+    },
+    "intro-to-clojure": {
+        "slug": "intro-to-clojure",
+        "title": "Intro to Clojure",
+        "description": "An introduction to programming with Clojure using the Leinengen REPL. We'll talk about how LISP languages work, some basic functional concepts, and how to implementthem in Clojure. I'm calling it 100 level because it'll be intro to Clojure, but overall it's not a beginner language, imho.",
+        "track": "languages-and-practices",
+        "space": "room-233",
+        "timePeriod": 1300,
+        "level": "100",
+        "speakers": [
+            "jeff-margolis"
+        ]
+    },
+    "invent-with-code": {
+        "slug": "invent-with-code",
+        "title": "Invent With Code: Turning Young Inventors into Coders",
+        "description": "This session will feature three different ways to engage young inventors with coding. We'll have hands on stations that use Little Bits, Hummingbirds, and Makey Makeys and share how each of these tools can be used to build confidence with code while creating fun inventions. Whether you're trying to engage your family members, mentor students in your community, or build your own confidence with using code to control physical objects, this session will leave you with some fun ways to invent with code.",
+        "track": "soft-skills-and-other",
+        "space": "room-442",
+        "timePeriod": 1100,
+        "level": "100",
+        "speakers": [
+            "lucie-delabruere",
+            "shannon-walters"
+        ]
+    },
+    "learning-react-redux-step-by-step": {
+        "slug": "learning-react-redux-step-by-step",
+        "title": "Learning React/Redux Step-by-Step: MVPs and Motivation",
+        "description": "In order to learn React and Redux step-by-step, I built an initiative tracker for role playing games. In this talk we’ll look at how to build a complicated interface and application by starting with a single, working component and expanding from there.",
+        "track": "client-mobile-web-and-more",
+        "space": "room-232",
+        "timePeriod": 1015,
+        "level": "200",
+        "speakers": [
+            "josh-lee"
+        ]
+    },
+    "lunch": {
+        "slug": "lunch",
+        "title": "Lunch",
+        "space": "main-hall",
+        "timePeriod": 1200,
+        "speakers": []
+    },
+    "modular-asp-dot-net-mvc": {
+        "slug": "modular-asp-dot-net-mvc",
+        "title": "Modular ASP.NET MVC",
+        "description": "You have probably heard of Orchard CMS, but did you know it is built upon a framework that you can leverage within any MVC application? In this session we will build an empty .NET Core MVC project, populate it with decoupled modules and investigate the built in multi-tenancy.",
+        "track": "client-mobile-web-and-more",
+        "space": "room-232",
+        "timePeriod": 1345,
+        "level": "200",
+        "speakers": [
+            "bob-crowley"
+        ],
+        "resources": [
+            {
+                "href": "https://github.com/OrchardCMS/OrchardCore.Samples",
+                "title": "Orchard Core Samples"
+            },
+            {
+                "href": "https://github.com/OrchardCMS/OrchardCore",
+                "title": "Orchard Core Source"
+            }
+        ]
+    },
+    "my-opinion-of-clean-code": {
+        "slug": "my-opinion-of-clean-code",
+        "title": "My Opinion of Clean Code",
+        "description": "How to write clean code.",
+        "track": "languages-and-practices",
+        "space": "room-233",
+        "timePeriod": 1615,
+        "level": "100",
+        "speakers": [
+            "andrew-champagne"
+        ]
+    },
+    "offline-sync-for-progressive-web-apps": {
+        "slug": "offline-sync-for-progressive-web-apps",
+        "title": "Offline Sync for Progressive Web Apps",
+        "description": "With the introduction of Progressive Web Apps and web platform APIs such as persistent storage, payments, geolocation, and push notifications, the web platform is taking on native apps. One important aspect of Progressive Web Apps is the concept of building your app to be Offline First. With an Offline First approach, you design your app for the most resource-constrained environment first. This approach provides a consistent user experience whether the user's device has no connectivity, limited connectivity, or great connectivity. One of the biggest benefits of Offline First apps is that they can be very fast, as they provide zero-latency access to content and data stored directly on the device. The Service Worker API can do most of the heavy lifting when it comes to storing content and assets for Offline First Progressive Web Apps. A bigger challenge can be storing and sync'ing your app's data. One of the best answers today for offline sync for Progressive Web Apps is a combination of Apache CouchDB (an open source document database), Hoodie (an open source Node.js backend for Offline First apps), and PouchDB (an open source JavaScript database that syncs). This stack can provide you with the starting point for your own Progressive Web App mobile backend and frontend, and it's entirely open source!",
+        "track": "client-mobile-web-and-more",
+        "space": "room-232",
+        "timePeriod": 1615,
+        "level": "200",
+        "speakers": [
+            "bradley-holt"
+        ],
+        "resources": [
+            {
+                "href": "https://speakerdeck.com/bradleyholt/offline-sync-for-progressive-web-apps-at-vermont-code-camp",
+                "title": "Slides"
+            }
+        ]
+    },
+    "plants-potions-and-people": {
+        "slug": "plants-potions-and-people",
+        "title": "Plants, Potions and People: Continuing Adventures in Scientific ETL",
+        "description": "This project started when a customer sent us a list of medicinal plants (genus, species and variety). Their users refer to these plants frequently and therefore wanted direct URLs for each species on each of several web sites that provide information about medicinal plants. The goal was to make it as easy as possible for users to reference the latest information across the set of sites. Each site required a different approach. For some, we used XPath expressions to parse web pages returned via simulated searches; other sites provided downloadable data sets that could be parsed directly. This talk describes the approach taken to build the reference to each data source and present the full set of data in a form that could be loaded into the client's in-house database.",
+        "track": "cloud-data-and-iot",
+        "space": "room-221",
+        "timePeriod": 1300,
+        "level": "200",
+        "speakers": [
+            "mitch-miller"
+        ],
+        "resources": [
+            {
+                "href": "https://www.slideshare.net/MitchMiller4/presentation-from-code-camp-2017/1",
+                "title": "Slides"
+            }
+        ]
+    },
+    "platform-creation-with-qt-and-ubuntu": {
+        "slug": "platform-creation-with-qt-and-ubuntu",
+        "title": "Platform Creation with Qt and Ubuntu",
+        "description": "Using the Ubuntu GNU/Linux distribution and Qt application framework, we will demonstrate a theoretical app platform for an IoT device. This theoretical app platform will be modeled after production systems using open source software in the automotive and medical industries. We’ll explore the rationale for creating such a platform, then briefly introduce the Qt application framework, and create an example app from scratch. Finally, we will package and deploy this app to our theoretical device for a live demo.",
+        "track": "soft-skills-and-other",
+        "space": "room-442",
+        "timePeriod": 1015,
+        "level": "300",
+        "speakers": [
+            "jereme-givens-lamothe"
+        ],
+        "resources": [
+            {
+                "href": "https://speakerdeck.com/zestymeta/qt-plus-ubuntu",
+                "title": "Slides"
+            },
+            {
+                "href": "https://zestymeta.github.io/blog/vermont-code-camp-2017/",
+                "title": "Blog Post"
+            }
+        ]
+    },
+    "programming-with-kotlin": {
+        "slug": "programming-with-kotlin",
+        "title": "Programming…with Kotlin",
+        "description": "We'll take a historical tour of some important proramming concepts with an eye toward maintanable, scalable programs. And we'll see how they are handled in a 21st century industrial language. Kotlin is designed to replace and interoperate with Java, but its power and brevity make it suitable for illustrating a wide variety of techniques.",
+        "track": "languages-and-practices",
+        "space": "room-233",
+        "timePeriod": 1100,
+        "level": "200",
+        "speakers": [
+            "eric-smith"
+        ],
+        "resources": [
+            {
+                "href": "https://github.com/ericssmith/presentations/blob/master/vtcc9/vtcc9_links.md",
+                "title": "Notes"
+            }
+        ]
+    },
+    "registration": {
+        "slug": "registration",
+        "title": "Registration",
+        "space": "main-hall",
+        "timePeriod": 800,
+        "speakers": []
+    },
+    "serverless-azure": {
+        "slug": "serverless-azure",
+        "title": "Serverless Azure: A Gentle Introduction to Azure through a Serverless Lens",
+        "description": "Looking for a hard-core deep dive into Azure explaining how to combine dozens of services to build applications that are globally scalable, low-latency, use big data, and support Blockchain?\n\nWell, this isn't that talk.\n\nIn this talk we'll take a more measured look at the Azure platform, focusing on Serverless services. We'll explain Serverless as the evolution of PaaS, then jump in to see how to quickly and practically build applications, APIs, and workflows that are easily deployed and managed. In our journey, we'll touch on Azure Functions, Logic Apps, API Apps, and maybe more services as time permits.\n\nBy the end, you'll see Serverless Azure in a highly practical light!",
+        "track": "cloud-data-and-iot",
+        "space": "room-221",
+        "timePeriod": 900,
+        "level": "200",
+        "speakers": [
+            "bill-wilder"
+        ]
+    },
+    "snacks": {
+        "slug": "snacks",
+        "title": "Break and Afternoon Snacks",
+        "space": "main-hall",
+        "timePeriod": 1445,
+        "speakers": []
+    },
+    "the-hickey-halloway-paradigm": {
+        "slug": "the-hickey-halloway-paradigm",
+        "title": "The Hickey Halloway Paradigm",
+        "description": "This talk is a survey of several presentations by Rich Hickey and Stu Halloway. Hickey is the originator of the Clojure programming language, and Halloway leads Cognitect, a consulting firm specializing in Clojure. We'll explore the approach Rich and Stu take toward the design of software and systems, in particular the notions of simplicity, state, value, identity, and time, and how these are embodied within the Clojure language and the Datomic database.",
+        "track": "languages-and-practices",
+        "space": "room-233",
+        "timePeriod": 1345,
+        "level": "200",
+        "speakers": [
+            "aaron-cummings"
+        ]
+    },
+    "the-power-of-networking": {
+        "slug": "the-power-of-networking",
+        "title": "The Power of Networking",
+        "description": "Learn how creating a strong personal and professional network of connections can help you grow your career and business. We'll cover some networking tips, lessons learned and several groups you can join.",
+        "track": "soft-skills-and-other",
+        "space": "room-442",
+        "timePeriod": 900,
+        "level": "100",
+        "speakers": [
+            "betsy-weber"
+        ]
+    },
+    "the-technical-art-of-mead-making": {
+        "slug": "the-technical-art-of-mead-making",
+        "title": "The Technical Art of Mead Making (and Other Fine Fermentations)",
+        "description": "A demonstration of how to make mead (honey + water + yeast) – a fermented beverage as old as human civilization itself. We'll chat about mead specifically, and fermented beverages generally. There's an art and a science to it; we'll chat about both, and how the hobby applies to making software.",
+        "track": "soft-skills-and-other",
+        "space": "room-442",
+        "timePeriod": 1615,
+        "level": "100",
+        "speakers": [
+            "rob-friesel"
+        ],
+        "resources": [
+            {
+                "href": "https://docs.google.com/presentation/d/18DxSSyRWmLk8ilbqnYpWrbuhdVCgl-RYK6oeYZl3p58/edit#slide=id.p",
+                "title": "Slides"
+            }
+        ]
+    },
+    "threat-modeling-for-secure-software-design": {
+        "slug": "threat-modeling-for-secure-software-design",
+        "title": "Threat Modeling for Secure Software Design",
+        "description": "Threat modeling is a way of thinking about what could go wrong and how to prevent it. Instinctively, we all think this way in regards to our own personal security and safety. When it comes to building software, some software shops either skip the important step of threat modeling in secure software design or they have tried threat modeling before but haven't quite figured out how to connect the threat models to real world software development and its priorities. In this session, you will learn practical strategies in using threat modeling in secure software architecture design and how to apply risk management in dealing with the threats.",
+        "track": "client-mobile-web-and-more",
+        "space": "room-232",
+        "timePeriod": 1100,
+        "level": "300",
+        "speakers": [
+            "robert-hurlbut"
+        ],
+        "resources": [
+            {
+                "href": "https://roberthurlbut.com/Resources/2017/VTCC9/Robert-Hurlbut-VTCC9-Threat-Modeling-For-Secure-Software-Design-09162017.pdf",
+                "title": "Slides"
+            }
+        ]
+    },
+    "uncovering-bitcoin": {
+        "slug": "uncovering-bitcoin",
+        "title": "Uncovering Bitcoin",
+        "description": "Bitcoin as a human story has it all: mystery, genius, fortune, folly, and ongoing drama. Bitcoin as a technology exists at a fascinating intersection of computer science, cryptography, and economics. This talk will delve deeply into the technology of Bitcoin and only lightly into its human story. Bitcoin proffers itself as digital cash, as an asset one can exchange with others but not duplicate or counterfeit without any central point of authority; this was thought to be impossible and known as the Byzantine Generals Problem. How does Bitcoin do it? This talk endeavors to answer that question and clear up some misunderstandings. The Bitcoin community speaks of wallets, mining, deflation, BTC, mBTC, bits, fiat currencies, and cryptocurrencies. What are they talking about? Much of this terminology as it relates to how Bitcoin operates is misleading. \"Mining\" conjures images of searching for Bitcoins in some digital mine. But really mining is best thought of as a lottery that runs every 10 minutes. Likewise when people say \"wallets\" they're better thought of as \"keys\" because when people steal your wallet you're liable to notice; when people copy your \"keys\" to steal money out of your bank's lockbox, that's harder to detect. Bitcoin has brought something new onto the face of the earth: a kind of co-operative mint, which used to be exclusive province of nation states, but now the creation of currencies is a power we all may possess.",
+        "track": "cloud-data-and-iot",
+        "space": "room-221",
+        "timePeriod": 1530,
+        "level": "200",
+        "speakers": [
+            "shane-celis"
+        ],
+        "resources": [
+            {
+                "href": "http://seawisphunter.com/2017/09/18/vt-code-camp-9-uncovering-bitcoin/",
+                "title": "Blog Post"
+            }
+        ]
+    },
+    "urban-legends": {
+        "slug": "urban-legends",
+        "title": "Urban Legends: What You Code Makes You Who You Are",
+        "description": "If you were a carpenter, would your skills at building be more important than the tools you use to build? Skills, right? Tools are just a means to an end. So why do developers think the language they use defines the problems they solve?\n\nThis talk will take a look at misconceptions across the board, some experiences, both positive and negative, people have had crossing barriers to new languages, and show some of the benefits thinking of one's self as a coder and not a \"Ruby coder\" or a \"PHP dev\" can have on being a better problem solver.",
+        "track": "soft-skills-and-other",
+        "space": "room-442",
+        "timePeriod": 1300,
+        "level": "200",
+        "speakers": [
+            "pj-hagerty"
+        ]
+    },
+    "using-mysql-workbench-to-design-and-build-databases": {
+        "slug": "using-mysql-workbench-to-design-and-build-databases",
+        "title": "Using MySQL Workbench to Design and Build Databases",
+        "description": "Use MySQL Workbench to design your MySQL database. With the design completed, you can forward engineer the design into SQL code that when run, will generate all of the tables, attributes, indexes and all of the related parts of a well-functioning database. See how to tweak the code so it can run on a Microsoft’s SQL Server.",
+        "track": "client-mobile-web-and-more",
+        "space": "room-232",
+        "timePeriod": 900,
+        "level": "300",
+        "speakers": [
+            "frank-canovatchel"
+        ]
+    },
+    "vector-graphics-in-xamarin": {
+        "slug": "vector-graphics-in-xamarin",
+        "title": "Vector Graphics in Xamarin",
+        "description": "We'll be discussing how to use vector graphic resources in Xamarin applications as a replacement for bitmap images.",
+        "track": "client-mobile-web-and-more",
+        "space": "room-232",
+        "timePeriod": 1300,
+        "level": "200",
+        "speakers": [
+            "chris-miller"
+        ]
+    },
+    "welcome": {
+        "slug": "welcome",
+        "title": "Welcome",
+        "space": "main-hall",
+        "timePeriod": 845,
+        "speakers": []
+    },
+    "why-i-hate-your-responsive-website": {
+        "slug": "why-i-hate-your-responsive-website",
+        "title": "Why I Hate Your Responsive Website",
+        "description": "Responsive web design is all the rage today…as it should be: responsive design solves a very significant form factor problem in a mobile-first world.\n\nJust one problem: Too many responsive websites suck. Badly. Many are just a predictable mix of a fancy header bar; a giant, completely useless hero image—just to make it clear that you must scroll; endlessly long pages with just about everything but what you are looking for; promising links that send you back to what you were just looking at; scrolling, scrolling, scrolling, scrolling; and a useless fat footer to signify your scrolling has mercifully come to an end. Oh yeah—and a hamburger menu (regardless of need) just to emphasize that it works on your phone too.\n\nIn this talk, Everett will review what responsive UX design is all about, both good and bad. Next, he will explore why so many responsive sites commit an unpardonable sin—putting appearance over usability and good mobile design. Finally, he will propose some design principles to restore some sanity to responsive design.",
+        "track": "security-and-devops",
+        "space": "room-424",
+        "timePeriod": 1530,
+        "level": "100",
+        "speakers": [
+            "everett-mckay"
+        ]
+    },
+    "working-towards-active-active-systems": {
+        "slug": "working-towards-active-active-systems",
+        "title": "Working Towards Active-Active Systems",
+        "description": "Cloud services allow for easier multi-regional deployments for scalability and fail-over, however managing the data is largely left up to the application developers. In this talk, we will look at the benefits and problems that come with systems that require state and several architectures to work towards active-active systems across data centers or regions. We will wrap up with a look at CRDTs, what problems they are fit for and how they address certain distributed data problems.",
+        "track": "security-and-devops",
+        "space": "room-424",
+        "timePeriod": 1100,
+        "level": "200",
+        "speakers": [
+            "peter-vile"
+        ],
+        "resources": [
+            {
+                "href": "https://drive.google.com/file/d/0B936qxGvSlpWanZtYTRwZkVraEE/view",
+                "title": "Slides"
+            }
+        ]
+    },
+    "working-with-geospatial-data": {
+        "slug": "working-with-geospatial-data",
+        "title": "Working with Geospatial Data",
+        "description": "As our world becomes increasingly information rich, geospatial data is playing an increasingly important role. Understanding Geographical Information Systems (GIS), where open data can be found and how to work with it can help in tackling complex problems in a new way.\n\nWe will also be announcing the data source and data sets to be used in this year's [HackVT event](http://www.hackvt.org/). Be sure to attend to learn more!\n\nTopics covered will include:\n\n * HackVT Datasets\n * Types of Geospatial Files\n * Metadata and Datums\n * Open Dataset Sources\n * Programs and Tools\n * Python, R and GIS",
+        "track": "security-and-devops",
+        "space": "room-424",
+        "timePeriod": 1345,
+        "level": "100",
+        "speakers": [
+            "kendall-fortney"
+        ]
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "client-mobile-web-and-more": {
+        "slug": "client-mobile-web-and-more",
+        "title": "Client, Mobile, Web & More"
+    },
+    "cloud-data-and-iot": {
+        "slug": "cloud-data-and-iot",
+        "title": "Cloud, Data & IoT"
+    },
+    "languages-and-practices": {
+        "slug": "languages-and-practices",
+        "title": "Languages & Practices"
+    },
+    "security-and-devops": {
+        "slug": "security-and-devops",
+        "title": "Security & DevOps"
+    },
+    "soft-skills-and-other": {
+        "slug": "soft-skills-and-other",
+        "title": "Soft Skills & Other"
+    }
+}

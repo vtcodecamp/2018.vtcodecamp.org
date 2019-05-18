@@ -1,0 +1,32 @@
+{
+    "room-221": {
+        "slug": "room-221",
+        "title": "Room 221",
+        "order": 1,
+        "track": "cloud-data-and-iot"
+    },
+    "room-232": {
+        "slug": "room-232",
+        "title": "Room 232",
+        "order": 3,
+        "track": "client-mobile-web-and-more"
+    },
+    "room-233": {
+        "slug": "room-233",
+        "title": "Room 233",
+        "order": 2,
+        "track": "languages-and-practices"
+    },
+    "room-424": {
+        "slug": "room-424",
+        "title": "Room 424",
+        "order": 4,
+        "track": "security-and-devops"
+    },
+    "room-442": {
+        "slug": "room-442",
+        "title": "Room 442",
+        "order": 5,
+        "track": "soft-skills-and-other"
+    }
+}

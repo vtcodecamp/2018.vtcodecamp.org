@@ -1,0 +1,695 @@
+:root {
+    --vtcc-blue: #1595D3;
+    --vtcc-orange: #FDB000;
+
+    --dark-gray: #222;
+    --medium-gray: #666;
+    --light-gray: #BBB;
+    --lightest-gray: #EEE;
+}
+
+
+
+body {
+    background-color: #F5F5F5;
+    background-repeat: repeat;
+    background-position: center center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    color: black;
+    text-align: center;
+}
+#content,
+.page {
+    width: 96%;
+    margin: 0 auto;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: left;
+}
+#content {
+    max-width: 920px;
+    padding-top: 1em;
+    padding-bottom: 4em;
+    background-color: white;
+    z-index: 5;
+}
+.inner {
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+aside.page {
+    overflow: hidden;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    background-color: #FDB000;
+    border-bottom: 1px solid white;
+    font-size: 0.95em;
+    text-align: center;
+}
+aside.page,
+aside.page a{
+    color: white;
+    vertical-align: top;
+}
+aside.page svg {
+    fill: white;
+}
+
+aside.page a {
+    text-decoration: none;
+    white-space: nowrap;
+}
+aside.page a:hover,
+aside.page a:focus {
+    text-decoration: underline;
+}
+aside.page p {
+    margin-top: 0;
+}
+aside.page ul.list-inline,
+aside.page ol.list-inline {
+    margin-top: 0;
+    padding-left: 0;
+    list-style: none;
+}
+aside.page ul.list-inline li,
+aside.page ol.list-inline li {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 8px;
+    margin-right: 8px;
+    vertical-align: baseline;
+}
+
+
+/* Header */
+
+header.page {
+    position: relative;
+    padding: 16px 2%;
+    background-color: #1595D3;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(transparent), to(rgba(0, 0, 0, 0.2)));
+    background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.2));
+    background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.2));
+    background-image: -ms-linear-gradient(top, transparent, rgba(0, 0, 0, 0.2));
+    background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.2));
+    text-align: center;
+    -webkit-box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.6);
+    z-index: 8;
+}
+header a:hover {
+    text-decoration: none;
+}
+.header-logo {
+    display: block;
+    width: 570px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.header-logo svg {
+    display: block;
+}
+
+header.page nav {
+    width: 96%;
+    display: inline-block;
+    margin-bottom: 0.2em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    vertical-align: middle;
+}
+header.page h1,
+header.page h1 a,
+header.page p,
+header.page li,
+header.page a {
+    color: white;
+}
+header.page h1 {
+    margin-top: 0;
+}
+header.page nav ul {
+    margin-top: 1.4em;
+}
+header.page nav li {
+    display: inline;
+    margin-left: 1em;
+    margin-right: 1em;
+    list-style: none;
+}
+header.page nav li a {
+    text-decoration: none;
+}
+header.page nav li a:hover,
+header.page nav li a:focus {
+    text-decoration: underline;
+}
+@media all and (min-width: 480px) {
+
+    header.page nav {
+        width: 45%;
+    }
+    header.page nav li {
+        font-size: 1.3em;
+    }
+}
+@media all and (min-width: 600px) {
+    header.page nav li {
+        font-size: 1.5em;
+    }
+}
+@media all and (min-width: 768px) {
+    header.page nav li {
+        font-size: 2em;
+    }
+}
+
+
+/* Date, Time, Location meta block */
+
+.page.content .meta {
+    display: inline-block;
+
+    text-align: center;
+    vertical-align: middle;
+
+    font-size: 1rem;
+    padding: 1rem 0;
+
+
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    color: var(--dark-gray);
+    
+}
+
+.page.content .meta abbr {
+    border-bottom: none !important;
+    cursor: inherit !important;
+    text-decoration: none !important;
+}
+
+.page.content .meta > abbr > span {
+    display: block;
+}
+.page.content .meta .date-time {
+    display: block;
+    font-weight: bold;
+}
+.page.content .meta .location {
+    max-width: 60%;
+    color: var(--dark-gray);
+}
+.page.content .meta .date-time,
+.page.content .meta .location {
+    display: inline-block;
+    margin: 0 0.3em;
+    vertical-align: middle;
+}
+.page.content .meta .date-time {
+    font-weight: normal;
+}
+
+.page.content .meta .day,
+.page.content .meta .month,
+.page.content .meta .date,
+.page.content .meta .time {
+    line-height: 1;
+    text-transform: uppercase;
+}
+.page.content .meta .day {
+    font-size: 0.75em;
+    margin-bottom: 0.25em;
+}
+.page.content .meta .time {
+    font-size: 0.75em;
+    margin-top: 0.3em;
+}
+.page.content .meta .month,
+.page.content .meta .date {
+    border: 2px solid var(--medium-gray);
+    font-weight: bold;
+    color: var(--medium-gray);
+}
+.page.content .meta .month {
+    padding: 0.3em 0.4em 0.2em;
+    background-color: var(--medium-gray);
+    border-bottom: none;
+    font-size: 1.3em;
+    color: white;
+}
+.page.content .meta .date {
+    font-size: 2.4em;
+
+    padding: 0.2em 0.4em;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.2)));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+}
+
+.page.content .meta .location {
+    line-height: 1.1;
+    text-align: left;
+}
+.page.content .meta .building {
+    font-size: 0.8em;
+}
+.page.content .meta .place {
+    font-size: 1.35em;
+}
+.page.content .meta .address {
+
+}
+.page.content .meta .address {
+    
+}
+
+@media all and (min-width: 400px) {
+    .page.content .meta .location {
+        /*max-width: none;*/
+    }
+}
+@media all and (min-width: 600px) {
+    .page.content .meta {
+        max-width: 56%;
+    }
+}
+@media all and (min-width: 800px) {
+    .page.content .meta {
+        max-width: none;
+    }
+    .page.content .meta .location {
+        max-width: none;
+    }
+}
+
+
+
+/* Footer */
+
+footer.page {
+    clear: both;
+    padding-top: 3em;
+    padding-bottom: 4em;
+    text-align: center;
+}
+footer.page p,
+footer.page a {
+    color: #999;
+}
+footer.page p {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+}
+article.anchor {
+    clear: both;
+}
+article.anchor header h1 {
+    margin: 1em 0 0.2em;
+    padding: 0.3em 1em 0.2em;
+    background-color: #BBB;
+    -webkit-border-radius: 0.3em;
+    -moz-border-radius: 0.3em;
+    border-radius: 0.3em;
+    font-size: 1.8em;
+    color: white;
+    text-align: center;
+}
+article.anchor aside {
+    margin-top: 1em;
+    padding: 2em 2% 3em;
+    background-color: #EEE;
+    -webkit-border-radius: 0.6em;
+    -moz-border-radius: 0.6em;
+    border-radius: 0.6em;
+    color: #555;
+}
+article.anchor aside h1 {
+    margin-top: 0;
+    color: #444;
+}
+@media all and (min-width: 600px) {
+    article.anchor {
+        padding-top: 1em;
+    }
+    article.anchor header h1 {
+        padding-top: 0.5em;
+        padding-bottom: 0.4em;
+        font-size: 2em;
+    }
+    article.anchor header img,
+    article.anchor aside {
+        max-width: 40%;
+        float: right;
+        margin-bottom: 2em;
+        margin-left: 2em;
+    }
+    article.anchor header img {
+        margin-top: 2.6em;
+    }
+    article.anchor aside {
+        max-width: 36%;
+        clear: right;
+        margin-bottom: 3em;
+    }
+}
+@media all and (min-width: 1024px) {
+    article.anchor header img,
+    article.anchor aside {
+        max-width: 45%;
+    }
+    article.anchor aside {
+        max-width: 41%;
+    }
+}
+article.sponsors {
+    clear: both;
+    padding-top: 2em;
+    text-align: center;
+}
+article.sponsors h1 {
+    font-size: 1.6em;
+    color: #AAA;
+    text-transform: uppercase;
+}
+ul.sponsors li {
+    display: inline-block;
+    margin: 0.6em 1.6em 1.6em;
+    font-size: 1.4em;
+    list-style: none;
+    vertical-align: middle;
+}
+ul.sponsors.premier-level li {
+    margin-bottom: 0.6em;
+}
+ul.sponsors li.name-only {
+    max-width: 150px;
+    font-size: 1.6em;
+}
+.logo {
+    width: 150px;
+    display: block;
+    margin: 0 auto 0.3em;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: -999em;
+    background-size: contain;
+}
+.logo.champlain-college {
+    width: 250px;
+    height: 58px;
+    background-image: url(/media/sponsors/champlain-college-logo-500x116.png);
+}
+.logo.tek-systems {
+    width: 225px;
+    height: 73px;
+    background-image: url(/media/sponsors/tek-systems-450x122.png);
+}
+.logo.allscripts {
+    width: 225px;
+    height: 73px;
+    background-image: url(/media/sponsors/allscripts-logo-450x98.png);
+}
+.logo.cox-automotive {
+    width: 200px;
+    height: 80px;
+    background-image: url(/media/sponsors/cox-automotive-logo-200x80.png);
+}
+.logo.burlington-telecom {
+    width: 225px;
+    height: 57px;
+    background-image: url(/media/sponsors/burlington-telecom-logo-450x114.png);
+}
+.logo.vermont-information-processing {
+    width: 110px;
+    height: 109px;
+    background-image: url(/media/sponsors/vermont-information-processing-logo-110x109.png);
+}
+.logo.the-university-of-vermont-medical-center {
+    width: 225px;
+    height: 66px;
+    background-image: url(/media/sponsors/the-university-of-vermont-medical-center-logo-450x131.png);
+}
+.logo.jetbrains {
+    width: 125px;
+    height: 135px;
+    background-image: url(/media/sponsors/jetbrains-logo.svg);
+}
+.logo.symbiotic-labs {
+    width: 145px;
+    height: 135px;
+    background-image: url(/media/sponsors/symbiotic-labs-logo.svg);
+}
+.logo.mywebgrocer {
+    width: 225px;
+    height: 108px;
+    background-image: url(/media/sponsors/mywebgrocer-logo-225x108.png);
+}
+.logo.galen-healthcare-solutions {
+    width: 250px;
+    height: 80px;
+    background-image: url(/media/sponsors/galen-412x120.png);
+}
+.logo.aerie-consulting {
+    width: 145px;
+    height: 145px;
+    background-image: url(/media/sponsors/aerie-consulting-logo-o365-330x330.png);
+}
+.logo.competitive-computing {
+    width: 110px;
+    height: 112px;
+    background-image: url(/media/sponsors/competetive-computing-logo-25years-220x224.png);
+}
+.logo.burlington-code-academy {
+    width: 235px;
+    height: 77px;
+    background-image: url(/media/sponsors/burlington-code-academy-470.png);
+}
+.logo.logic-supply {
+    width: 150px;
+    height: 64px;
+    background-image: url(/media/sponsors/logic-supply-logo-150x64.png);
+}
+.logo.burlington-code {
+    width: 150px;
+    height: 67px;
+    background-image: url(/media/sponsors/burlington-code-logo-150x67.png);
+}
+.logo.tyler-technologies {
+    width: 150px;
+    height: 52px;
+    background-image: url(/media/sponsors/tyler-technologies-logo-150x52.png);
+}
+.logo.code-magazine {
+    width: 150px;
+    height: 54px;
+    background-image: url(/media/sponsors/code-magazine-logo-300x108.png);
+}
+.logo.esri {
+    width: 175px;
+    height: 102px;
+    background-image: url(/media/sponsors/esri-logo-175x102.png);
+}
+.logo.btv-ignite {
+    width: 150px;
+    height: 75px;
+    background-image: url(/media/sponsors/btv-ignite-300x139.png);
+}
+.logo.mabl {
+    width: 150px;
+    height: 75px;
+    background-image: url(/media/sponsors/mabl-logo-300x124.png);
+}
+.logo.pluralsight {
+    width: 220px;
+    height: 75px;
+    background-image: url(/media/sponsors/pluralsight-logo.svg);
+}
+.logo.girl-develop-it {
+    width: 200px;
+    height: 41px;
+    margin-top: 15px;
+    background-image: url(/media/sponsors/girl-develop-it-logo-200x41.png);
+}
+.logo.usability-kitty {
+    width: 200px;
+    height: 41px;
+    margin-top: 15px;
+    background-image: url(/media/sponsors/usability-kitty-250x58.png);
+}
+.logo.owlfeather {
+    width: 200px;
+    height: 41px;
+    margin-top: 15px;
+    background-image: url(/media/sponsors/owlfeather-250x61.png);
+}
+.logo.manning {
+    width: 200px;
+    height: 41px;
+    margin-top: 15px;
+    background-image: url(/media/sponsors/manning-600x77.png);
+}
+.logo.ddc {
+    width: 270px;
+    height: 70px;
+    background-image: url(/media/sponsors/dealerdotcom-1000x172.png);
+}
+.logo.sessionize {
+    width: 270px;
+    height: 70px;
+    background-image: url(/media/sponsors/sessionize-logo-540x88.png);
+}
+.logo.dealerpolicy {
+    width: 200px;
+    height: 100px;
+    background-image: url(/media/sponsors/dealerpolicy-logo-400.png);
+}
+.logo.vermontsystems {
+    width: 200px;
+    height: 100px;
+    background-image: url(/media/sponsors/vermont-systems-300x104.png);
+}
+.logo.twilio {
+    width: 225px;
+    height: 74px;
+    background-image: url(/media/sponsors/twilio-450x141.png);
+}
+ul.sponsors li.static-logo-wrapper {
+    margin: 0;
+}
+.static-logo {
+    border-radius: 0;
+}
+.static-logo.ibm {
+    width: 170px;
+    margin: 66px;
+}
+.static-logo.microsoft {
+    width: 240px;
+    margin-bottom: 30px;
+}
+.legal-statement,
+.legal-statement a {
+    color: gray;
+}
+.legal-statement {
+    margin-top: 35px;
+    font-size: 1.1em;
+    font-style: italic;
+}
+#event,
+#event a {
+    color: #888;
+}
+#event {
+    display: inline-block;
+    margin: 2.5em 0 0 -4em;
+    padding: 1.2em 5em 0.8em 4em;
+    background-color: #DDD;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(0, #EEE), to(90%, #DDD));
+    background-image: -webkit-linear-gradient(top, #EEE 0, #DDD 90%);
+    background-image: -moz-linear-gradient(top, #EEE 0, #DDD 90%);
+    background-image: -ms-linear-gradient(top, #EEE 0, #DDD 90%);
+    background-image: -o-linear-gradient(top, #EEE 0, #DDD 90%);
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
+    font-size: 0.8em;
+    -webkit-box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.3);
+}
+#event h1,
+#event ul,
+#event li {
+    display: inline-block;
+    margin-top: 0;
+    vertical-align: middle;
+}
+#event h1,
+#event h1 a {
+    color: #AAA;
+}
+#event h1 {
+    font-size: 6em;
+}
+#event ul {
+    display: block;
+}
+#event li {
+    margin-bottom: 0.6em;
+    margin-left: 0;
+    margin-right: 1em;
+    line-height: 1;
+    list-style: none;
+}
+#event a {
+    text-decoration: none;
+}
+@media all and (min-width: 480px) {
+    #event ul {
+        display: inline-block;
+        margin-top: 1.2em;
+        margin-left: 1.8em;
+    }
+}
+@media all and (min-width: 600px) {
+    #event {
+        font-size: 1em;
+    }
+}
+@media all and (min-width: 768px) {
+    #event {
+        margin-top: 3em;
+    }
+}
+@media all and (min-width: 1024px) {
+    #event {
+        margin-top: 5em;
+        margin-bottom: 2em;
+        padding-right: 10em;
+    }
+}
+article.resource {
+    display: inline-block;
+    margin: 0 2em 1em 0;
+    text-align: center;
+    vertical-align: top;
+}
+article.resource p {
+    margin-top: 0.2em;
+}
+#error {
+    background-color: transparent;
+    font-size: 1.1em;
+    text-align: center;
+}
+#error h1,
+#error h1 a,
+#error p,
+#error a {
+    color: #555;
+}
+@media all and (min-width: 600px) {
+    #error {
+        padding-top: 4em;
+        padding-bottom: 4em;
+        font-size: 1.8em;
+    }
+}
+
+
+
+.list-inline svg, .twitter svg {
+    width: 15px;
+    height: 15px;
+}

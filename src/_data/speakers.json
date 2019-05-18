@@ -1,0 +1,414 @@
+{
+    "aaron-cummings": {
+        "slug": "aaron-cummings",
+        "firstName": "Aaron",
+        "lastName": "Cummings",
+        "bio": "Aaron Cummings focuses on applying functional programming approaches to electronic design automation. He has been interested in FP since beginning to dabble with Clojure four years ago.",
+        "twitter": {
+            "href": "https://twitter.com/btvaaron",
+            "title": "btvaaron"
+        },
+        "sessions": [
+            "the-hickey-halloway-paradigm"
+        ]
+    },
+    "amy-chess": {
+        "slug": "amy-chess",
+        "firstName": "Amy",
+        "lastName": "Chess",
+        "bio": "Amy Chess is a User Experience Researcher at Cox Automotive. Her research focus is on enterprise software for the retail automotive sector. In addition to conducting research, Amy works across 18 release trains to bring user-centered thinking and methodologies to product, design, and engineering teams. In a previous life, Amy conducted neuroscience research and taught undergraduate psychology courses. Amy is a bit of a Luddite, but she believes this is advantageous for doing UX research because it keeps her grounded in the problem space rather than the solution space.",
+        "twitter": {
+            "href": "https://twitter.com/AmyChess",
+            "title": "AmyChess"
+        },
+        "sessions": [
+            "forget-fonts"
+        ]
+    },
+    "andrew-champagne": {
+        "slug": "andrew-champagne",
+        "firstName": "Andrew",
+        "lastName": "Champagne",
+        "bio": "Passionate Software Developer",
+        "sessions": [
+            "my-opinion-of-clean-code"
+        ]
+    },
+    "ben-glassman": {
+        "slug": "ben-glassman",
+        "firstName": "Ben",
+        "lastName": "Glassman",
+        "bio": "Ben began working with web technology when he first acquired a dial-up Internet connection in the early 90s. His professional career started as a freelance web developer and graphic designer in southern Massachusetts at an internet start-up during the dot com boom. He moved to Vermont in 2001 to pursue a Bachelor’s Degree in Multimedia and Graphic Design from Champlain College. After graduating in 2005, Ben joined the VDW team, bringing his experience in web development and a passion for building accessible, standards-compliant web sites. He is a versatile polyglot programmer and full-stack web developer, combining expertise in front-end JavaScript development with experience in server side technologies using PHP and MySQL. Ben is the CTO at VDW and serves as technical lead for VDW’s most complicated projects, working with clients to help translate their needs into a deliverable solution. He works closely with our design team to prototype functionality and converts visual details into working web applications.",
+        "sessions": [
+            "infinite-replay-value"
+        ]
+    },
+    "betsy-weber": {
+        "slug": "betsy-weber",
+        "firstName": "Betsy",
+        "lastName": "Weber",
+        "bio": "Betsy is a Program Manager Evangelist with the Microsoft MVP Program. Betsy has spoken around the world about a variety of topics around tech, video creation and community. Betsy is a photo nerd, knitter, beer geek, spork expert and a Michigander living in NYC.",
+        "twitter": {
+            "href": "https://twitter.com/betsyweber",
+            "title": "betsyweber"
+        },
+        "sessions": [
+            "bring-your-code-to-life",
+            "the-power-of-networking"
+        ]
+    },
+    "bill-wilder": {
+        "slug": "bill-wilder",
+        "firstName": "Bill",
+        "lastName": "Wilder",
+        "bio": "Bill Wilder is a cloud computing veteran and CTO at Finomial, providing SaaS solutions to the global hedge fund industry from the public cloud. Bill is recognized by Microsoft as an 8-time Azure MVP awardee for his cloud expertise and community leadership. Bill is the author of _Cloud Architecture Patterns_ (O’Reilly Media, 2012).",
+        "twitter": {
+            "href": "https://twitter.com/codingoutloud",
+            "title": "codingoutloud"
+        },
+        "sessions": [
+            "serverless-azure"
+        ]
+    },
+    "bob-crowley": {
+        "slug": "bob-crowley",
+        "firstName": "Bob",
+        "lastName": "Crowley",
+        "bio": "Bob Crowley is senior software developer for Evo International Portland where he designs and builds mission critical APIs used by integrators like Authorize.Net and Mastercard. When not in meetings or responding to email, Bob enjoys actually writing .NET code in the form of ASP.NET Web API, WCF and sometimes kickin' it old school with legacy SOAP web services. Bob is a vocal advocate for dependency injection, unit testing, automated builds, source controlled databases and Chinese food Friday. He has over 11 years of professional development experience with technologies such as .NET, T-SQL, JavaScript and ASP.NET.",
+        "twitter": {
+            "href": "https://twitter.com/contrivedex",
+            "title": "contrivedex"
+        },
+        "sessions": [
+            "modular-asp-dot-net-mvc"
+        ]
+    },
+    "bob-familiar": {
+        "slug": "bob-familiar",
+        "firstName": "Bob",
+        "lastName": "Familiar",
+        "bio": "Bob Familiar is the National Practice Director for Application Services at BlueMetal. As National Director, Bob leads a team of seasoned Principal Architects who are responsible for industry research & development, rapid prototyping and outreach to the technology community. They are responsible for defining BlueMetal's technical direction and offerings and provide strategy and guidance to BlueMetal clients on their most important and challenging projects. Bob is an accomplished software professional, evangelist and author as well as a Microsoft MVP. Bob has been working in the software industry for 30 years, holds a patent in object relational architecture and technology and is author of the books Microservices, IoT and Azure and Business in Real-Time.",
+        "twitter": {
+            "href": "https://twitter.com/bobfamiliar",
+            "title": "bobfamiliar"
+        },
+        "sessions": [
+            "azure-iot-devops-and-edge-devices"
+        ]
+    },
+    "bradley-holt": {
+        "slug": "bradley-holt",
+        "firstName": "Bradley",
+        "lastName": "Holt",
+        "bio": "Bradley Holt is a Developer Advocate and Senior Software Engineer with IBM Watson Data Platform. He is the author of several publications including _Scaling CouchDB_ and _Writing and Querying MapReduce Views in CouchDB_ (both published by O'Reilly Media). He has spoken at numerous conferences including Abstractions , ApacheCon, the O'Reilly Software Architecture Conference, Fluent, ConFoo, CodeMash, Node.js Interactive, That Conference, NoSQL Now!, php[tek], ZendCon, OSCON, the jQuery Conference, and SXSW Interactive. Bradley writes and speaks about topics such as Apache CouchDB, PouchDB, Offline First, PHP, Node.js, and Domain-Driven Design.",
+        "twitter": {
+            "href": "https://twitter.com/BradleyHolt",
+            "title": "BradleyHolt"
+        },
+        "sessions": [
+            "offline-sync-for-progressive-web-apps"
+        ]
+    },
+    "brian-waters": {
+        "slug": "brian-waters",
+        "firstName": "Brian",
+        "lastName": "Waters",
+        "bio": "Brian Waters is a Security Analyst at Independent Security Evaluators in Baltimore. He specializes in code review and vulnerability hunting, and has helped clients secure apps built on a variety of technologies, ranging from native code to the latest web frameworks.",
+        "twitter": {
+            "href": "https://twitter.com/int10h",
+            "title": "int10h"
+        },
+        "sessions": [
+            "how-file-upload-features-a-security-risk-and-what-you-can-do-about-it"
+        ]
+    },
+    "chris-miller": {
+        "slug": "chris-miller",
+        "firstName": "Chris",
+        "lastName": "Miller",
+        "bio": "I am a Microsoft MVP, a Xamarin Certified Mobile Developer for iOS and Android, and the leader of the Tech Valley .NET User Group.\n\nI have been developing on various platforms for way too long to detail, but I currently work and write about C# programming using Microsoft and Xamarin tools. For the last decade or so, I have worked for Tyler Technologies, in the school transportation market.",
+        "twitter": {
+            "href": "https://twitter.com/anotherlab",
+            "title": "anotherlab"
+        },
+        "sessions": [
+            "vector-graphics-in-xamarin"
+        ]
+    },
+    "eric-smith": {
+        "slug": "eric-smith",
+        "firstName": "Eric",
+        "lastName": "Smith",
+        "bio": "Eric works at pairedIQ, building tools to help make learning more efficient.",
+        "twitter": {
+            "href": "https://twitter.com/eric_s_smith",
+            "title": "eric_s_smith"
+        },
+        "sessions": [
+            "programming-with-kotlin"
+        ]
+    },
+    "everett-mckay": {
+        "slug": "everett-mckay",
+        "firstName": "Everett",
+        "lastName": "McKay",
+        "bio": "Everett McKay is Principal of UX Design Edge, a user experience design training and consulting company for mobile, web, and desktop applications. Everett's specialty is UX design training for software professionals who aren't experienced designers through onsite and virtual courses and workshops. He has delivered UX design workshops to an international audience that includes Europe, Asia, South America, and Africa.\n\nEverett is author of \"Intuitive Design: Eight Steps to an Intuitive UI\" and \"UI is Communication: How to design intuitive, user-centered user interfaces by focusing on effective communication\". While at Microsoft, he was responsible for writing and evangelizing the Windows User Experience Guidelines. Before joining Microsoft, he was a programmer, specializing in designing and developing Windows and Macintosh user interfaces.",
+        "twitter": {
+            "href": "https://twitter.com/UXDesignEdge",
+            "title": "UXDesignEdge"
+        },
+        "sessions": [
+            "why-i-hate-your-responsive-website"
+        ]
+    },
+    "frank-canovatchel": {
+        "slug": "frank-canovatchel",
+        "firstName": "Frank",
+        "lastName": "Canovatchel",
+        "bio": "Frank Canovatchel is an Associate Professor of Web Development at Champlain College. He also is a technology consultant for local companies in Vermont. His areas of expertise include back-end Web development, business analytics, and information systems design and development. Frank started his career as a Financial Analyst on Wall Street. After three years and attaining the coveted \"window office\", Frank literally walked off the \"Street\" and into education. He has taught several levels of math (yes, including Calculus!) and economics, not to mention Web development. He has his BA in Political Science, MA in Political Economy and a second MA in Economics, all from Fordham University. In 2015 Frank earned his Ph.D., also from Fordham University.",
+        "sessions": [
+            "using-mysql-workbench-to-design-and-build-databases"
+        ]
+    },
+    "iris-galvez": {
+        "slug": "iris-galvez",
+        "firstName": "Iris",
+        "lastName": "Galvez",
+        "bio": "Iris Galvez holds a BS in Chemical Engineering from the University of Puerto Rico, Mayaguez, and a MS in Chemical engineering from Michigan State University. She has worked in the Semiconductor industry for 11+ years in companies like IBM, Motorola, Intel and most recently, GLOBALFOUNDRIES. In addition to being an engineer, Iris is a licensed Zumba instructor teaching 3 classes a week. Outside of work Iris enjoys traveling, baking and spending time with family.",
+        "sessions": [
+            "adopt-an-active-office-lifestyle"
+        ]
+    },
+    "jeff-margolis": {
+        "slug": "jeff-margolis",
+        "firstName": "Jeff",
+        "lastName": "Margolis",
+        "bio": "Web dev (JavaScript) at Dealer.com, BTVJS coordinator. Formerly wrote Clojure for 2 years for Condé Nast.",
+        "sessions": [
+            "intro-to-clojure"
+        ]
+    },
+    "jereme-givens-lamothe": {
+        "slug": "jereme-givens-lamothe",
+        "firstName": "Jereme",
+        "lastName": "Givens-Lamothe",
+        "bio": "Jereme is a Senior Software Architect at DocBox, and has been using Qt professionally for more than 9 years. After graduating Saint Michael's College with a BS in Computer Science in 2008, he joined Physician's Computer Company to help create a Pediatrics focused EHR. Since 2013 he has been at DocBox, working on the HMI and clinical app platform, with the goal of enabling data driven healthcare.",
+        "twitter": {
+            "href": "https://twitter.com/zestymeta",
+            "title": "zestymeta"
+        },
+        "sessions": [
+            "platform-creation-with-qt-and-ubuntu"
+        ]
+    },
+    "john-need": {
+        "slug": "john-need",
+        "firstName": "John",
+        "lastName": "Need",
+        "bio": "Front End Architect at Galen Healthcare.",
+        "twitter": {
+            "href": "https://twitter.com/johnneed",
+            "title": "johnneed"
+        },
+        "sessions": [
+            "functional-javascript"
+        ]
+    },
+    "josh-lee": {
+        "slug": "josh-lee",
+        "firstName": "Josh",
+        "lastName": "Lee",
+        "bio": "With over 15 years of web industry experience, Josh Lee is an expert in Content Management, ecommerce, and SaaS platforms. He is passionate about making the web and web development skills more universally accessible. Josh is a consultant and also the organizer for the Burlington WordPress meetup.",
+        "twitter": {
+            "href": "https://twitter.com/joshleecreates",
+            "title": "joshleecreates"
+        },
+        "sessions": [
+            "a-developers-guide-to-wordpress",
+            "learning-react-redux-step-by-step"
+        ]
+    },
+    "kendall-fortney": {
+        "slug": "kendall-fortney",
+        "firstName": "Kendall",
+        "lastName": "Fortney",
+        "bio": "Kendal Fortney has worked for a variety of companies including Dealer.com and MyWebGrocer, and is a 2017 Vermont Data Innovation Fellow for the Vermont Center for Geographical Information. He is now focusing on using Python for data analytics, machine learning, and their application to business questions.",
+        "sessions": [
+            "working-with-geospatial-data"
+        ]
+    },
+    "kendra-goudreau": {
+        "slug": "kendra-goudreau",
+        "firstName": "Kendra",
+        "lastName": "Goudreau",
+        "bio": "Kendra Goudreau currently works at GLOBALFOUNDRIES (formally IBM Microelectronics) in information technology supporting supply chain IT applications. She has held various leadership positions in her local Society of Women Engineers (SWE) section and established the women's group at her company's Vermont location. Her previous roles include semiconductor manufacturing engineer and client-facing engineer. Kendra graduated from the University of New Hampshire with a degree in electrical engineering.",
+        "twitter": {
+            "href": "https://twitter.com/kkgoudreau",
+            "title": "kkgoudreau"
+        },
+        "sessions": [
+            "adopt-an-active-office-lifestyle"
+        ]
+    },
+    "kevin-thorley": {
+        "slug": "kevin-thorley",
+        "firstName": "Kevin",
+        "lastName": "Thorley",
+        "bio": "Kevin Thorley is an Enterprise Architect at Dealer.com. In his 8 years at Dealer he has held roles as a developer, technical lead, and architect on several different teams. Kevin's primary focus is on cloud computing and the architectures of large scale enterprise and SaaS applications. When he isn't at the office, Kevin can be found enjoying all VT has to offer with his wife, two kids, and two dogs.",
+        "twitter": {
+            "href": "https://twitter.com/kevinthorley",
+            "title": "kevinthorley"
+        },
+        "sessions": [
+            "cloud-migration-at-dealer.com"
+        ]
+    },
+    "linus-falck-ytter": {
+        "slug": "linus-falck-ytter",
+        "firstName": "Linus",
+        "lastName": "Falck-Ytter",
+        "bio": "Linus grew up splitting time between Germany and the United States before his family made an exciting life decision by settling in Cleveland, Ohio. He has a degree in Computer Science from 'The' Ohio State University and now lives in Waltham with his roommate and cat.",
+        "twitter": {
+            "href": "https://twitter.com/lifayt",
+            "title": "lifayt"
+        },
+        "sessions": [
+            "fast-chatbot-prototyping"
+        ]
+    },
+    "lucie-delabruere": {
+        "slug": "lucie-delabruere",
+        "firstName": "Lucie",
+        "lastName": "deLaBruere",
+        "bio": "Lucie deLaBruere and Shannon Walters are two Vermont educators who work with both in-school and out-of-school activities that encourage more schools and young people to build coding schools.",
+        "twitter": {
+            "href": "https://twitter.com/techsavvygirl",
+            "title": "techsavvygirl"
+        },
+        "sessions": [
+            "invent-with-code"
+        ]
+    },
+    "maureen-mcelaney": {
+        "slug": "maureen-mcelaney",
+        "firstName": "Maureen",
+        "lastName": "McElaney",
+        "bio": "Maureen McElaney is a Developer Advocate at IBM Watson Data Platform and enjoys broadening IBM's understanding and involvement in open source communities. Prior to joining the team, she worked as a QA Engineer at Dealer.com and is passionate about building tools that increase developer productivity and joy. She is an experienced community builder, founding her local chapter of Girl Develop It.",
+        "twitter": {
+            "href": "https://twitter.com/Mo_Mack",
+            "title": "Mo_Mack"
+        },
+        "sessions": [
+            "go-offline-first-to-save-the-world"
+        ]
+    },
+    "mitch-miller": {
+        "slug": "mitch-miller",
+        "firstName": "Mitch",
+        "lastName": "Miller",
+        "bio": "Mitch Miller has been helping research organization make better use of their data for more than 20 years as an analyst, software developer, tester and technical support specialist.",
+        "twitter": {
+            "href": "https://twitter.com/MovingMitch",
+            "title": "MovingMitch"
+        },
+        "sessions": [
+            "plants-potions-and-people"
+        ]
+    },
+    "peter-vile": {
+        "slug": "peter-vile",
+        "firstName": "Peter",
+        "lastName": "Vile",
+        "bio": "Peter Vile received his master degree from Colorado State University in computer science with a focus on software engineering specializing in distributed systems and aspect oriented middleware. Since then he has been developing web based solutions and services in the Java ecosystem in several domains such as defense, telecom and now automotive. Currently he works for Dealer.com focused on internal and external integration projects. While not chasing his two boys around he tries to stay up on messaging and reactive systems and is currently dabbling in Scala, Play and Akka.",
+        "twitter": {
+            "href": "https://twitter.com/twinsenf1",
+            "title": "twinsenf1"
+        },
+        "sessions": [
+            "working-towards-active-active-systems"
+        ]
+    },
+    "pj-hagerty": {
+        "slug": "pj-hagerty",
+        "firstName": "PJ",
+        "lastName": "Hagerty",
+        "bio": "Developer, writer, speaker, musician, and Developer Advocate at Logz.io, PJ is known to travel the world speaking about programming and the way people think and interact. He is also known for wearing hats.",
+        "twitter": {
+            "href": "https://twitter.com/aspleenic",
+            "title": "aspleenic"
+        },
+        "sessions": [
+            "urban-legends"
+        ]
+    },
+    "rob-friesel": {
+        "slug": "rob-friesel",
+        "firstName": "Rob",
+        "lastName": "Friesel",
+        "bio": "Rob Friesel is a Dealer.com veteran since 2003, where he is a User Experience Architect helping to research, design, and validate software for the automotive sector. He describes his job as \"pulling on threads until the problem space is naked.\" When he's not doing that, he's usually making sugary liquids that he feeds to yeast.",
+        "twitter": {
+            "href": "https://twitter.com/founddrama",
+            "title": "founddrama"
+        },
+        "sessions": [
+            "the-technical-art-of-mead-making"
+        ]
+    },
+    "robert-hurlbut": {
+        "slug": "robert-hurlbut",
+        "firstName": "Robert",
+        "lastName": "Hurlbut",
+        "bio": "Robert Hurlbut is an independent software security consultant and trainer based in Enfield, CT. Robert is a Microsoft MVP for Developer Technologies and Security and holds the (ISC)2 CSSLP security certification. Robert has 30 years of industry experience in software security, software architecture, and software development. You can follow Robert on his [blog](https://roberthurlbut.com/blog) and on [Twitter](https://twitter.com/RobertHurlbut) and each week as a co-host of the [Application Security Podcast](https://www.appsecpodcast.org).",
+        "twitter": {
+            "href": "https://twitter.com/RobertHurlbut",
+            "title": "RobertHurlbut"
+        },
+        "sessions": [
+            "threat-modeling-for-secure-software-design"
+        ]
+    },
+    "shane-celis": {
+        "slug": "shane-celis",
+        "firstName": "Shane",
+        "lastName": "Celis",
+        "bio": "I'm an evolutionary robotics researcher turned #gamedev, making fun virtual robot toys that hint at artificial evolution (think: educational trojan horse).",
+        "twitter": {
+            "href": "https://twitter.com/shanecelis",
+            "title": "shanecelis"
+        },
+        "sessions": [
+            "uncovering-bitcoin"
+        ]
+    },
+    "shannon-walters": {
+        "slug": "shannon-walters",
+        "firstName": "Shannon",
+        "lastName": "Walters",
+        "bio": "Lucie deLaBruere and Shannon Walters are two Vermont educators who work with both in-school and out-of-school activities that encourage more schools and young people to build coding schools.",
+        "sessions": [
+            "invent-with-code"
+        ]
+    },
+    "tobin-winters": {
+        "slug": "tobin-winters",
+        "firstName": "Tobin",
+        "lastName": "Winters",
+        "bio": "Tobin worked for many years in Systems Administration, Networking and Database Administration before making the move to Software Development. This experience led to his natural fit and passion for DevOps, combining the experience from all of these disciplines and working to bring traditionally siloed departments together to get quality software out the door faster.\n\nHe currently does this for MyWebGrocer in Winooski, VT as the Software Development Manager for Productization and Automation.",
+        "sessions": [
+            "devops-why-you-should-be-doing-it-and-where-to-start"
+        ]
+    },
+    "veronika-kolesnikova": {
+        "slug": "veronika-kolesnikova",
+        "firstName": "Veronika",
+        "lastName": "Kolesnikova",
+        "bio": "Web Developer at UMass Medical School. Passionate about backend web development, mainly with Microsoft technologies like C#, .NET, SQL, Azure. Loves to learn new development tools and languages and share the knowledge with the community. Recently started working with Xamarin and cannot wait to provide her insights.\n\nLast year Veronika graduated with MS degree in Information Technology. In her free time, she likes dancing, traveling and practicing aerial yoga. [LinkedIn](https://www.linkedin.com/in/vkolesnikova/) | [GitHub](https://github.com/Veroni4ka)",
+        "twitter": {
+            "href": "https://twitter.com/breakpointv16",
+            "title": "breakpointv16"
+        },
+        "sessions": [
+            "cognitive-services-in-xamarin-applications"
+        ]
+    }
+}
