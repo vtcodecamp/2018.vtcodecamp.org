@@ -2,14 +2,11 @@
 
 module.exports = function(data) {
     var stringify = JSON.stringify({
-        levels: data.levels,
         schedule: data.schedule,
         sessions: data.sessions,
-        sessionsBySpace: data.sessionsBySpace,
-        spaces: data.spaces,
+        sessionsByRoom: data.sessionsByRoom,
         speakers: data.speakers,
-        timePeriods: data.timePeriods,
-        tracks: data.tracks,
+        rooms: data.rooms,
     }, null, 2)
     return `<pre>${stringify}</pre>`;
 };
