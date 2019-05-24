@@ -7,35 +7,33 @@ description: Read more about the sessions of Vermont Code Camp
 <h1>{{ config.year }} {{ title }}</h1>
 <p>{{ description }}</p>
 
-{% for spaceSlug, spaceSessions in sessionsBySpace %}
+{% for roomId, roomSessions in sessionsByRoom %}
 <article class="space">
 
-    {% set trackSlug = spaces[spaceSlug].track %}
+    {% set room = rooms[roomId] %}
 
-    <h2 id="{{ spaceSlug }}"> {{ tracks[trackSlug].title }} <small>({{ spaces[spaceSlug].title }})</small></h2>
+    <h2 id="{{ roomId }}"> {{ room.name }} </h2>
 
-    {% for timeCode, session in spaceSessions %}
+    {% for timeCode, session in roomSessions %}
     <article class="session">
-        <h3 id="{{session.slug}}">
+        <h3 id="{{session.id}}">
             {{ session.title }} 
             <small class="parenthesis">
-                {% for speakerSlug in session.speakers %}
-                    {% set speaker = speakers[speakerSlug] %}
-                    <a href="/speakers#{{speakerSlug}}">
-                        {{ speaker.firstName }} {{ speaker.lastName }}
+                {% for speakerId in session.speakers %}
+                    {% set speaker = speakers[speakerId] %}
+                    <a href="/speakers#{{speakerId}}">
+                        {{ speaker.fullName }}
                     </a>
                     {% if not loop.last %}/{% endif %}
                 {% endfor %}
             </small>
             <small>
-                <a href="/schedule#{{ session.timePeriod }}">
-                    {% set timePeriod = timePeriods[session.timePeriod] %}
-                    {{ timePeriod.start | to12hourTime }}-{{ timePeriod.end | to12hourTime }}
+                <a href="/schedule#{{ session.startsAt }}">
+                    {{ session.startsAt | to12hourTime }}-{{ session.endsAt | to12hourTime }}
                 </a>
             </small>
         </h3>
-        {% set level = levels[session.level] %}
-        <p class="level">{{ level.title }} <small>({{ level.description }})</small></p>
+        <p class="level">Level {{ session.level }}</p>
 
         {{ session.description | markdown | safe }}
 
