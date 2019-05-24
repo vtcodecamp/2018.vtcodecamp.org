@@ -12,6 +12,7 @@ description: Read more about the Vermont Code Camp speakers.
         <h2 id="{{ speakerId }}">{{ speaker.fullName }}
         {% if speaker.twitter %} 
             <small class="twitter">
+                {# @TODO make this work with sessionize data, including linkedin, and website links #}
                 <a href="{{ speaker.twitter.href }}">
                     {% include "fa/twitter.svg" %}
                     @{{ speaker.twitter.title }}

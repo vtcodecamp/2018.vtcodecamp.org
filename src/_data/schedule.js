@@ -1,50 +1,51 @@
 
-// module.exports = buildSchedule()
+module.exports = buildSchedule()
 
 function buildSchedule()
 {
-    let sessionsByTimeSpace = getSessionsByTimeSpace();
-    // return sessionsByTimeSpace;
+    let timeSlots = getTimeSlots();
+    // return timeSlots; // (for debugging)
 
 
     let speakers  = require('./speakers.json');
-    let tracks = require('./tracks.json');
-    let spaces = require('./spaces.json');
-    let times = require('./timePeriods.json');
+    let rooms = require('./rooms.json');
 
     let scheduleTable = {
         head: [],
         body: [],
     };
     scheduleTable.head.push({ title: 'Time', type: 'timespan' });
-    for (let space of Object.values(spaces)) {
-        let track = tracks[space.track];
+    for (let room of Object.values(rooms)) {
+        if (room.id == 2324) {
+            continue;
+        }
         scheduleTable.head.push({
-            title: track.title,
-            subtitle: space.title,
+            title: room.name,
+            subtitle: '',
             type: 'track',
         })
     }
-    for (let [timeSlug, rowSessions] of Object.entries(sessionsByTimeSpace)) {
+    for (let [timeCode, timeSlot] of Object.entries(timeSlots)) {
+        
+        let startTime = getTimeString(timeSlot.info.startsAt);
+        let endTime = getTimeString(timeSlot.info.endsAt);
         let tableRow = [];
-        let time = times[timeSlug];
-        let startTime = getTimeString(time.start);
-        let endTime = getTimeString(time.end);
         tableRow.push({
             type: 'timespan',
             title: startTime + "- " + endTime,
-            timeSlug: timeSlug,
+            timeSlug: timeCode,
         })
+        let rowSessions = timeSlot.sessionsByRoom;
         for (let session of Object.values(rowSessions)) {
-            if (session.space == 'main-hall') {
+            if (session.isPlenumSession) {
                 type = 'plenumSession';
                 title_link = false;
-            } else if (session.slug == false) {
+            } else if (session.id == false) {
                 type = 'unscheduled';
                 title_link = false;
             } else {
                 type = 'session';
-                title_link = `/sessions/#${session.slug}`;
+                title_link = `/sessions/#${session.id}`;
             }
             tableCell = {
                 type: type,
@@ -52,11 +53,11 @@ function buildSchedule()
                 title_link: title_link,
                 speakers: [],
             };
-            for (let speakerCode of session.speakers) {
-                let speaker = speakers[speakerCode];
+            for (let speakerId of session.speakers) {
+                let speaker = speakers[speakerId];
                 tableCell.speakers.push({
-                    name: speaker.firstName + " " + speaker.lastName,
-                    link: `/speakers/#${speaker.slug}`,
+                    name: speaker.fullName,
+                    link: `/speakers/#${speaker.id}`,
                 });
             }
             tableRow.push(tableCell);
@@ -66,41 +67,45 @@ function buildSchedule()
     return scheduleTable;
 }
 
-function getSessionsByTimeSpace()
+function getTimeSlots()
 {
     let sessions = require('./sessions.json');
-    let spaces = require('./spaces.json');
+    let rooms = require('./rooms.json');
     
-    let sessionsByTimeSpace = {};
+    let timeSlots = {};
     for (let session of Object.values(sessions)) {
-        let timeSlug = session.timePeriod;
-        let spaceSlug = session.space;
-        if (!sessionsByTimeSpace[timeSlug]) {
-            sessionsByTimeSpace[timeSlug] = {};
+        let timeCode = getTimeCode(session.startsAt);
+        let roomId = session.roomId;
+        if (!timeSlots[timeCode]) {
+            timeSlots[timeCode] = {
+                info: {
+                    startsAt: session.startsAt,
+                    endsAt: session.endsAt,
+                },
+                sessionsByRoom: {},
+            };
         }
-        sessionsByTimeSpace[timeSlug][spaceSlug] = session;
+        timeSlots[timeCode].sessionsByRoom[roomId] = session;
     }
 
-    for (let [timeSlug, timePeriod] of Object.entries(sessionsByTimeSpace)) {
-        if (timePeriod['main-hall']) {
+    /**
+     * Add a blank entry for any missing rooms (unscheduled for given time period).
+     * Skip time periods with sessions in the Main Hall (id 2324)
+     * since all other rooms are unscheduled at those times.
+     */
+    for (let [timeCode, timeSlot] of Object.entries(timeSlots)) {
+        let sessionsByRoom = timeSlot.sessionsByRoom
+        if (sessionsByRoom['2324']) {
             continue;
         }
-        for (let key of Object.keys(spaces)) {
-            if (!timePeriod[key]) {
-                timePeriod[key] = { slug: false, title: false, space: key, timePeriod: timeSlug, speakers: [] }
+        for (let key of Object.keys(rooms)) {
+            if (!sessionsByRoom[key] && key != 2324) {
+                sessionsByRoom[key] = { id: false, title: false, roomId: key, startsAt: timeCode, speakers: [] }
             }
         }
     }
 
-    let sessionsByTimeSpaceSorted = {};
-    for (let [timeCode, spaces] of Object.entries(sessionsByTimeSpace)) {
-        let spacesSorted = {};
-        Object.keys(spaces).sort().forEach(function (key) {
-            spacesSorted[key] = spaces[key];
-        });
-        sessionsByTimeSpaceSorted[timeCode] = spacesSorted;
-    }
-    return sessionsByTimeSpaceSorted;
+    return timeSlots;
 }
 
 function getTimeString(timeString)
@@ -113,4 +118,16 @@ function getTimeString(timeString)
     })
     time = time.replace(' AM', 'am').replace(' PM', 'pm');
     return time;
+}
+
+function getTimeCode(timeString)
+{
+    let date = new Date(timeString);
+    let time = date.toLocaleTimeString('en-US', {
+        hour12: false,
+        hour: '2-digit',
+        minute: '2-digit',
+    });
+    let id = time.replace(':','');
+    return parseInt(id);
 }
