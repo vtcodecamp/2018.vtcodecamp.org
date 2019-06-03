@@ -10,15 +10,16 @@ description: Read more about the Vermont Code Camp speakers.
 {% for speakerId, speaker in speakers %}
     <article class="speaker">
         <h2 id="{{ speakerId }}">{{ speaker.fullName }}
-        {% if speaker.twitter %} 
-            <small class="twitter">
-                {# @TODO make this work with sessionize data, including linkedin, and website links #}
-                <a href="{{ speaker.twitter.href }}">
-                    {% include "fa/twitter.svg" %}
-                    @{{ speaker.twitter.title }}
+        {% for link in speaker.links %} 
+            {% if link.linkType == 'Twitter' %}
+            <small class="speaker-link twitter">
+                <a href="{{ link.url }}">
+                    {% include 'fa/twitter.svg' %}
+                    {{ link.name }}
                 </a>
             </small>
-        {% endif %}
+            {% endif %}
+        {% endfor %}
         </h2>
 
         {{ speaker.bio | markdown | safe }}
