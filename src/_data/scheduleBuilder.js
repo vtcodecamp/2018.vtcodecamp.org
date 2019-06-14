@@ -1,20 +1,19 @@
 
-module.exports = buildSchedule()
-
-function buildSchedule()
-{
-    let timeSlots = getTimeSlots();
-    // return timeSlots; // (for debugging)
+module.exports = {
+    buildSchedule, 
+};
 
 
-    let speakers  = require('./speakers.json');
-    let rooms = require('./rooms.json');
+function buildSchedule(sessions, rooms, speakers) {
+
+    let timeSlots = getTimeSlots(sessions, rooms);
 
     let scheduleTable = {
         head: [],
         body: [],
     };
     scheduleTable.head.push({ title: 'Time', type: 'timespan' });
+
     for (let room of Object.values(rooms)) {
         if (room.id == 2324) {
             continue;
@@ -25,6 +24,7 @@ function buildSchedule()
             type: 'track',
         })
     }
+    
     for (let [timeCode, timeSlot] of Object.entries(timeSlots)) {
         
         let startTime = getTimeString(timeSlot.info.startsAt);
@@ -64,14 +64,11 @@ function buildSchedule()
         }
         scheduleTable.body.push(tableRow);
     }
+
     return scheduleTable;
 }
 
-function getTimeSlots()
-{
-    let sessions = require('./sessions.json');
-    let rooms = require('./rooms.json');
-    
+function getTimeSlots(sessions, rooms) {
     let timeSlots = {};
     for (let session of Object.values(sessions)) {
         let timeCode = getTimeCode(session.startsAt);
@@ -108,8 +105,7 @@ function getTimeSlots()
     return timeSlots;
 }
 
-function getTimeString(timeString)
-{
+function getTimeString(timeString) {
     let date = new Date(timeString);
     let time = date.toLocaleTimeString('en-US', {
         hour12: true,
@@ -120,8 +116,7 @@ function getTimeString(timeString)
     return time;
 }
 
-function getTimeCode(timeString)
-{
+function getTimeCode(timeString) {
     let date = new Date(timeString);
     let time = date.toLocaleTimeString('en-US', {
         hour12: false,

@@ -7,7 +7,7 @@ description: Read more about the Vermont Code Camp speakers.
 <h1>{{ config.year }} {{ title }}</h1>
 <p>{{ description }}</p>
 
-{% for speakerId, speaker in speakers %}
+{% for speakerId, speaker in sessionize.speakers %}
     <article class="speaker">
         <h2 id="{{ speakerId }}">{{ speaker.fullName }}
         {% for link in speaker.links %} 

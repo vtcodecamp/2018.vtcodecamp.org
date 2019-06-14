@@ -1,27 +1,42 @@
-
-const path = require('path');
-const fs = require('fs');
 const fetch = require('node-fetch');
+const scheduler = require('./scheduleBuilder');
+const sessionizer = require('./sessionsBuilder');
 
 
-module.exports = fetchData();
+module.exports = async function() {
 
-async function fetchData()
-{
     const response = await fetch('https://sessionize.com/api/v2/bm8zoh0m/view/all');
     const sessionize = await response.json();
 
-    const [levels, formats] = parseCategories(sessionize.categories);
+
+    const {levels, formats} = buildCategories(sessionize.categories);
+    const rooms = buildRooms(sessionize.rooms)
     const speakers = buildSpeakers(sessionize.speakers);
     const sessions = buildSessions(sessionize.sessions, levels, formats);
 
-    writeDataFile('sessions.json', sessions);
-    writeDataFile('speakers.json', speakers);
-    writeDataFile('rooms.json', sessionize.rooms);
+
+    const schedule = scheduler.buildSchedule(sessions, rooms, speakers)
+    const sessionsByRoom = sessionizer.getSessionsByRoom(sessions)
+
+    return {sessionize, levels, formats, speakers, sessions, schedule, sessionsByRoom};
+};
+
+function flattenArrayToObj(array) {
+    let object = {};
+
+    for (let item of array) {
+        object[item.id] = item;
+    }
+
+    return object;
 }
 
+function buildRooms(roomsArray) {
+    let rooms = flattenArrayToObj(roomsArray)
+    return rooms
+}
 
-function parseCategories(categories) {
+function buildCategories(categories) {
     var levels = {};
     var formats = {};
 
@@ -37,7 +52,7 @@ function parseCategories(categories) {
         }
     }
 
-    return [levels, formats]
+    return {levels, formats}
 }
 
 function buildSpeakers(speakersData) {
@@ -59,7 +74,7 @@ function buildSpeakers(speakersData) {
         }
     }
 
-    return speakersData
+    return flattenArrayToObj(speakersData)
 }
 
 
@@ -73,26 +88,5 @@ function buildSessions(sessionsData, levels, formats) {
             }
         }
     }
-    return sessionsData;
-}
-
-
-function writeDataFile(filename, array) {
-    let object = {};
-
-    for (let item of array) {
-        object[item.id] = item;
-    }
-
-    let projectRoot = path.normalize(__dirname);
-
-    let file = `${projectRoot}/src/_data/${filename}`;
-    let content = JSON.stringify(object, null, 4);
-
-    fs.writeFile(file, content, function(err) {
-        if(err) {
-            return console.log(err);
-        }
-        console.log(`Sessionize data written to ${filename}`);
-    });
+    return flattenArrayToObj(sessionsData);
 }

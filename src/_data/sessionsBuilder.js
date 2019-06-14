@@ -1,10 +1,11 @@
 
-module.exports = getSessionsByRoom();
+module.exports = { 
+    getSessionsByRoom 
+}
 
-function getSessionsByRoom()
-{
+function getSessionsByRoom(sessions) {
     let sessionsByRoom = {};
-    let sessions = require('./sessions.json');
+    
     for (let session of Object.values(sessions)) {
         if (session.isPlenumSession) {
             continue;
@@ -23,8 +24,7 @@ function getSessionsByRoom()
     return sessionsByRoomSorted;
 }
 
-function getTimeSlotId(timeString)
-{
+function getTimeSlotId(timeString) {
     let date = new Date(timeString);
     let time = date.toLocaleTimeString('en-US', {
         hour12: false,

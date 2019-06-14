@@ -7,10 +7,10 @@ description: Read more about the sessions of Vermont Code Camp
 <h1>{{ config.year }} {{ title }}</h1>
 <p>{{ description }}</p>
 
-{% for roomId, roomSessions in sessionsByRoom %}
+{% for roomId, roomSessions in sessionize.sessionsByRoom %}
 <article class="space">
 
-    {% set room = rooms[roomId] %}
+    {% set room = sessionize.rooms[roomId] %}
 
     <h2 id="{{ roomId }}"> {{ room.name }} </h2>
 

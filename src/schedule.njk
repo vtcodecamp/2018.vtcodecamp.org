@@ -15,7 +15,7 @@ description: The Vermont Code Camp schedule includes sessions on a variety of so
 
     <thead>
         <tr>
-        {% for th in schedule.head %}
+        {% for th in sessionize.schedule.head %}
             <th scope="col" class="{{th.type}}">
                 {{ th.title }} 
                 {% if th.subtitle %}
@@ -27,7 +27,7 @@ description: The Vermont Code Camp schedule includes sessions on a variety of so
     </thead>
 
     <tbody>
-    {% for row in schedule.body %}
+    {% for row in sessionize.schedule.body %}
 
         <tr>
         {% for cell in row %} 
