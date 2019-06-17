@@ -20,11 +20,10 @@ const PARAMS = {
       email: "admin@vtcodecamp.org"
     }
   };
-   
-module.exports = fetchData();
 
-async function fetchData()
-{
+let UPDATE_COUNT = 0  
+
+exports.handler = async function (event, context, callback) {
     const response = await fetch('https://sessionize.com/api/v2/bm8zoh0m/view/all');
     const sessionize = await response.json();
 
@@ -35,6 +34,13 @@ async function fetchData()
     await writeDataFile('sessions.json', sessions);
     await writeDataFile('speakers.json', speakers);
     await writeDataFile('rooms.json', sessionize.rooms);
+
+
+
+    return {
+        statusCode: 200,
+        body: `Updated ${UPDATE_COUNT} files`
+    }
 }
 
 
@@ -123,6 +129,8 @@ async function writeDataFile(filename, array) {
         
         // WRITE file
         await octokit.repos.createOrUpdateFile(writeFileParams)
+
+        UPDATE_COUNT++;
     }
    
 }

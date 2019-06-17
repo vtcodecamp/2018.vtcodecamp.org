@@ -46,3 +46,4 @@ It also runs a local webserver and makes the site available at
   * Write to `.env` file in root directory
 * [Adding `.env` variables to node](https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786)
   * Will also need to [add environment variables to netlify](https://www.netlify.com/docs/continuous-deployment/#environment-variables)
+* [Netlify - JS Lambda Functions](https://www.netlify.com/docs/functions/#javascript-lambda-functions)
