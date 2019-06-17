@@ -4,6 +4,7 @@
   "description": "VT Code Camp 2018 website",
   "main": "index.js",
   "dependencies": {
+    "@octokit/rest": "^16.28.2",
     "dotenv": "^8.0.0"
   },
   "devDependencies": {
