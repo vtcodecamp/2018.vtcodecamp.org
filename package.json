@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "VT Code Camp 2018 website",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "dotenv": "^8.0.0"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^0.8.3",
     "node-fetch": "^2.3.0"

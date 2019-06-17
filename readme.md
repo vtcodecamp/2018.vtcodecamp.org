@@ -38,3 +38,11 @@ It also runs a local webserver and makes the site available at
 * [11ty - JS Templates](https://www.11ty.io/docs/languages/javascript/)
 * [a11y - add lang attribute](https://dequeuniversity.com/rules/axe/3.1/html-has-lang?application=lighthouse)
 * [a11y - Accessible SVGs](https://css-tricks.com/accessible-svgs/)
+
+
+### Fetch And Sync External Data
+
+* [Generate Personal Access Token](https://github.com/settings/tokens/new) for GitHub
+  * Write to `.env` file in root directory
+* [Adding `.env` variables to node](https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786)
+  * Will also need to [add environment variables to netlify](https://www.netlify.com/docs/continuous-deployment/#environment-variables)
