@@ -99,6 +99,7 @@ async function writeDataFile(filename, array) {
     let data = flattenArrayToObj(array) 
     let filePath = `src/_data/${filename}`;
     let content = JSON.stringify(data, null, 4);
+    let base64 = Buffer.from(content).toString('base64')
 
     const readFileParams = {
         ...PARAMS,
@@ -108,17 +109,22 @@ async function writeDataFile(filename, array) {
     // READ file
     const file = await octokit.repos.getContents(readFileParams)
 
-    const writeFileParams = {
-        ...PARAMS,
-        path: filePath,
-        sha: file.data.sha || "",
-        message: "Update sessionize data.",
-        content: Buffer.from(content).toString('base64')
-    }
-    
-    // WRITE file
-    await octokit.repos.createOrUpdateFile(writeFileParams)
+    // git file adds line breaks - remove and compare
+    let dataHasChanged = file.data.content.replace(/(\r\n|\n|\r)/gm,"") != base64
 
+    if (dataHasChanged) {
+        const writeFileParams = {
+            ...PARAMS,
+            path: filePath,
+            sha: file.data.sha || "",
+            message: "Update sessionize data.",
+            content: base64
+        }
+        
+        // WRITE file
+        await octokit.repos.createOrUpdateFile(writeFileParams)
+    }
+   
 }
 
 function flattenArrayToObj(array) {
