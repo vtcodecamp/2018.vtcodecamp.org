@@ -12,7 +12,7 @@
             "type": "node",
             "request": "launch",
             "name": "Fetch Data",
-            "program": "${workspaceFolder}\\fetchData.js",
+            "program": "${workspaceFolder}\\functions\\fetchData.js",
             "args": [],
         }
     ]

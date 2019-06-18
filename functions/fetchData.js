@@ -23,7 +23,13 @@ const PARAMS = {
 
 let UPDATE_COUNT = 0  
 
-exports.handler = async function (event, context, callback) {
+// run on functions, attach handler
+exports.handler = fetchData 
+
+// run locally, just call on module export
+module.exports = fetchData();
+
+async function fetchData(event, context, callback) {
     const response = await fetch('https://sessionize.com/api/v2/bm8zoh0m/view/all');
     const sessionize = await response.json();
 
@@ -35,11 +41,10 @@ exports.handler = async function (event, context, callback) {
     await writeDataFile('speakers.json', speakers);
     await writeDataFile('rooms.json', sessionize.rooms);
 
-
-
     return {
         statusCode: 200,
-        body: `Updated ${UPDATE_COUNT} files`
+        body: `Fetched ${sessions.length} session(s) and ${speakers.length} speakers(s) from sessionize.  
+               Compared to existing data in github and updated ${UPDATE_COUNT} files`
     }
 }
 
