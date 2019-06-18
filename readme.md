@@ -32,6 +32,14 @@ continues to watch and rebuild the site when file changes are detected.
 It also runs a local webserver and makes the site available at 
 [localhost:8080](http://localhost:8080)
 
+### functions
+
+`npm run functions`
+
+This runs the command `npx --node-arg=--inspect netlify-lambda serve ./` which hosts [netlify functions]
+(https://github.com/netlify/netlify-lambda) at
+[localhost:9000](http://localhost:9000) | [/fetchData](http://localhost:9000/fetchData)
+
 ### Resources
 
 * [11ty - Config Input Directory](https://www.11ty.io/docs/config/#input-directory)
@@ -47,3 +55,6 @@ It also runs a local webserver and makes the site available at
 * [Adding `.env` variables to node](https://medium.com/the-node-js-collection/making-your-node-js-work-everywhere-with-environment-variables-2da8cdf6e786)
   * Will also need to [add environment variables to netlify](https://www.netlify.com/docs/continuous-deployment/#environment-variables)
 * [Netlify - JS Lambda Functions](https://www.netlify.com/docs/functions/#javascript-lambda-functions)
+* [Run Netlify Functions Locally w/ Netlify-Lambda](https://github.com/netlify/netlify-lambda)
+* [Locally Debug Netlify-Lambda](https://github.com/netlify/netlify-lambda/pull/83/commits/89de1351fbad894e791445e0b6df630d52119bd1)
+* [Debug NPM Package Script](https://stackoverflow.com/q/43210203/1366033)

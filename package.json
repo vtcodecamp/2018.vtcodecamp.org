@@ -9,12 +9,13 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.8.3",
+    "netlify-lambda": "^1.4.13",
     "node-fetch": "^2.3.0"
   },
   "scripts": {
-    "fetch-data": "node fetchData.js",
     "build": "npx eleventy",
-    "serve": "npx eleventy --serve"
+    "serve": "npx eleventy --serve",
+    "functions": "npx --node-arg=--inspect netlify-lambda serve ./"
   },
   "repository": {
     "type": "git",

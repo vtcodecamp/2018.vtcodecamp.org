@@ -24,12 +24,9 @@ const PARAMS = {
 let UPDATE_COUNT = 0  
 
 // run on functions, attach handler
-exports.handler = fetchData 
+exports.handler = fetchData;
 
-// run locally, just call on module export
-module.exports = fetchData();
-
-async function fetchData(event, context, callback) {
+async function fetchData(event, context) {
     const response = await fetch('https://sessionize.com/api/v2/bm8zoh0m/view/all');
     const sessionize = await response.json();
 
@@ -43,8 +40,8 @@ async function fetchData(event, context, callback) {
 
     return {
         statusCode: 200,
-        body: `Fetched ${sessions.length} session(s) and ${speakers.length} speakers(s) from sessionize.  
-               Compared to existing data in github and updated ${UPDATE_COUNT} files`
+        body: `Fetched ${sessions.length} session(s) and ${speakers.length} speakers(s) from Sessionize. \r\n` +
+              `Compared to existing files in github and updated ${UPDATE_COUNT} files`
     }
 }
 

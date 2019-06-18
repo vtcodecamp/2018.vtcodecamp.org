@@ -11,9 +11,13 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Fetch Data",
-            "program": "${workspaceFolder}\\functions\\fetchData.js",
-            "args": [],
+            "name": "Launch Functions",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": [
+                "run-script",
+                "functions"
+            ],
+            "port": 9229
         }
     ]
 }
