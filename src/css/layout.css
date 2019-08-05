@@ -693,3 +693,12 @@ article.resource p {
     width: 15px;
     height: 15px;
 }
+
+.passed-notice {
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    background: #cce8ff;
+    border: 1px solid #4790ce;
+    border-radius: 6px;
+}
