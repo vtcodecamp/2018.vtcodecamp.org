@@ -19,7 +19,7 @@ body {
     color: black;
     text-align: center;
 }
-#content,
+section.content,
 .page {
     width: 96%;
     margin: 0 auto;
@@ -27,7 +27,7 @@ body {
     padding-right: 2%;
     text-align: left;
 }
-#content {
+section.content {
     max-width: 920px;
     padding-top: 1em;
     padding-bottom: 4em;
@@ -668,26 +668,24 @@ article.resource {
 article.resource p {
     margin-top: 0.2em;
 }
-#error {
+section.error {
     background-color: transparent;
     font-size: 1.1em;
     text-align: center;
 }
-#error h1,
-#error h1 a,
-#error p,
-#error a {
+section.error h1,
+section.error h1 a,
+section.error p,
+section.error a {
     color: #555;
 }
 @media all and (min-width: 600px) {
-    #error {
+    section.error {
         padding-top: 4em;
         padding-bottom: 4em;
         font-size: 1.8em;
     }
 }
-
-
 
 .list-inline svg, .twitter svg {
     width: 15px;
@@ -701,4 +699,7 @@ article.resource p {
     background: #cce8ff;
     border: 1px solid #4790ce;
     border-radius: 6px;
+}
+section.error .passed-notice {
+    display: none;
 }
