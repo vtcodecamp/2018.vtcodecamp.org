@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "description": "VT Code Camp 2018 website",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "@octokit/rest": "^16.28.2",
+    "dotenv": "^8.0.0"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^0.8.3",
+    "netlify-lambda": "^1.4.13",
     "node-fetch": "^2.3.0"
   },
   "scripts": {
-    "fetch-data": "node fetchData.js",
     "build": "npx eleventy",
-    "serve": "npx eleventy --serve"
+    "serve": "npx eleventy --serve",
+    "functions": "npx --node-arg=--inspect netlify-lambda serve ./"
   },
   "repository": {
     "type": "git",
